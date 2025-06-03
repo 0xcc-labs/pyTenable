@@ -20,9 +20,3 @@ jobs:
 
       - name: OSS Security Audits
         run: just audit
-
-      - name: Snyk Scan
-        run: just snyk
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          SNYK_CFG_ORG: ${{ secrets.SNYK_CFG_ORG }}
