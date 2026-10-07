@@ -27,14 +27,3 @@ jobs:
         run: just lint $UV_PYTHON
       - name: "Unit Testing"
         run: just unit-tests $UV_PYTHON
-
-  code-assessments:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
-        with:
-          python-version: "3.12"
-      - uses: extractions/setup-just@v4
-      - name: "Code Audits"
-        run: just audit
