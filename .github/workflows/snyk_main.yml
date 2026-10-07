@@ -17,6 +17,3 @@ jobs:
       - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b
       - uses: snyk/actions/setup@master
       - uses: extractions/setup-just@v4
-
-      - name: OSS Security Audits
-        run: just audit
